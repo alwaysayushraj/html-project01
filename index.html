@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple HTML Project</title>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My HTML Project</h1>
+        <p>A simple website using HTML elements.</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a> |
+        <a href="#skills">Skills Table</a> |
+        <a href="#contact">Contact Form</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm learning HTML. This is my practice project where I use basic HTML elements like headings, paragraphs, tables, images, links, and forms. </p>
+
+        <img src="https://4.bp.blogspot.com/-422B1rj4WCM/WAYkMwxaPjI/AAAAAAAAXk8/Gfy_BhKMjsIHfkbGJlnizdzq9nc9Kp7YwCLcB/s640/boss%2Bbaby.JPG" alt="Placeholder Image" width="400" height="400">
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Skill</th>
+                    <th>Level</th>
+                    <th>Experience(Years)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>Intermediate</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Beginner</td>
+                    <td>0.5</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Beginner</td>
+                    <td>0.3</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="thankyou.html" method="get">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" placeholder="Type your message here...." rows="4" cols="50" required></textarea><br><br>
+
+            <label for="country">Country:</label><br>
+            <select id="country" name="country" required>
+                <option value="">Select your country</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Other">Other</option>
+            </select><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p> ©2025 My Simple Project. All rights reserved. </p>
+    </footer>
+    
+</body>
+</html>
